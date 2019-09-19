@@ -15,7 +15,7 @@ class productsController extends Controller
     {
         $data = DB::table('products')
             ->join('categories', 'products.category_id', '=', 'categories.id')
-            ->select(['products.*','categories.title as title_cate'])
+            ->select(['products.*','categories.name as name_cate'])
             ->get();
 
         $products =$data;
@@ -29,10 +29,10 @@ class productsController extends Controller
 
     function addItem()
     {
-        $category = Category::all(['id', 'title']);
-        echo "<pre>";
-        echo $category;
-        echo "</pre>";
+        $category = Category::all(['id', 'name']);
+//        echo "<pre>";
+//        echo $category;
+//        echo "</pre>";
         return view('products.item', compact('category'));
     }
 
@@ -40,7 +40,7 @@ class productsController extends Controller
     {
         $product = new Product();
 
-        $product->title = $request->title;
+        $product->name = $request->name;
         $product->short_description = $request->short_description;
         $product->description = $request->description;
         $product->publish = $request->publish;
@@ -48,6 +48,8 @@ class productsController extends Controller
         $product->category_id = $request->category_id;
         $product->ordering = $request->ordering;
         $product->image_intro = $request->image_intro;
+        $product->price = $request->price;
+        $product->amount = $request->amount;
 
         $product->save();
 
@@ -65,11 +67,11 @@ class productsController extends Controller
     {
         $id = $request->id;
         $product = Product::find($id);
-        $category = Category::all(['id', 'title']);
+        $category = Category::all(['id', 'name']);
 
-        echo "<pre>";
-        echo $product;
-        echo "</pre>";
+//        echo "<pre>";
+//        echo $product;
+//        echo "</pre>";
         return view("products.edit", compact("product", 'category'));
     }
 
@@ -78,7 +80,7 @@ class productsController extends Controller
         $id = $request->id;
         $product = Product::find($id);
 
-        $product->title = $request->title;
+        $product->name = $request->name;
         $product->short_description = $request->short_description;
         $product->description = $request->description;
         $product->publish = $request->publish;
@@ -86,6 +88,8 @@ class productsController extends Controller
         $product->category_id = $request->category_id;
         $product->ordering = $request->ordering;
         $product->image_intro = $request->image_intro;
+        $product->price = $request->price;
+        $product->amount = $request->amount;
 
         $product->save();
         return redirect()->route('list-products');

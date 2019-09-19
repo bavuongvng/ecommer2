@@ -14,8 +14,8 @@
                 <th colspan="2">Edit category</th>
             </tr>
             <tr>
-                <td>Title: </td>
-                <td><input type="text" name="title" value="{{$category['title']}}" /></td>
+                <td>Name: </td>
+                <td><input type="text" name="name" value="{{$category['name']}}" /></td>
             </tr>
             <tr>
                 <td>Image intro: </td>

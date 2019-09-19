@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class Category extends Migration
+class CardsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,13 +13,12 @@ class Category extends Migration
      */
     public function up()
     {
-        Schema::create('categories', function (Blueprint $table) {
+        //
+        Schema::create('cards', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->string("title")->unique();
-            $table->string("image_intro");
-            $table->text("description");
-            $table->integer("publish");
-            $table->integer("ordering");
+            $table->integer('category_id');
+            $table->integer('product_id');
+            $table->integer('quantity');
             $table->timestamps();
         });
     }

@@ -19,9 +19,9 @@ class categoriesController extends Controller
 
     function editItem($id){
         $category = Category::where('id', $id)->firstOrFail();
-        echo "<pre>";
-        echo $category;
-        echo "</pre>";
+//        echo "<pre>";
+//        echo $category;
+//        echo "</pre>";
         return view('categories.edit', compact("category"));
 
     }
@@ -32,7 +32,7 @@ class categoriesController extends Controller
 
         $category = Category::find($id);
 
-        $category->title = $request->title;
+        $category->name = $request->name;
         $category->image_intro = $request->image_intro;
         $category->description = $request->description;
         $category->publish = $request->publish;
@@ -45,7 +45,7 @@ class categoriesController extends Controller
     function store(Request $request) {
         $categories = new Category();
 
-        $categories->title = $request->title;
+        $categories->name = $request->name;
         $categories->image_intro = $request->image_intro;
         $categories->description = $request->description;
         $categories->publish = $request->publish;

@@ -19,8 +19,8 @@
         </thead>
         <tbody>
         <tr>
-            <td>Title</td>
-            <td><input autofocus type="text" name="title"/></td>
+            <td>Name</td>
+            <td><input autofocus type="text" name="name"/></td>
         </tr>
         <tr>
             <td>Short description</td>
@@ -30,28 +30,18 @@
             <td>Description</td>
             <td><input type="text" name="description"/></td>
         </tr>
-        <tr>
-            <td>Publish</td>
-            <td>
-                <select name="publish">
-                    <option value="1">Hien</option>
-                    <option value="0">An</option>
-                </select>
-            </td>
-        </tr>
+
         <tr>
             <td>Hot product</td>
             <td><input type="number" name="hot_product"/></td>
         </tr>
         <tr>
-            <td>Category</td>
-            <td>
-                <select name="category_id">
-                    @foreach($category as $cate)
-                        <option value="{{$cate['id']}}">{{$cate['title']}}</option>
-                    @endforeach
-                </select>
-            </td>
+            <td>Price</td>
+            <td><input type="number" name="price"/></td>
+        </tr>
+        <tr>
+            <td>Amount</td>
+            <td><input type="number" name="amount"/></td>
         </tr>
         <tr>
             <td>Ordering</td>
@@ -60,6 +50,25 @@
         <tr>
             <td>Image intro</td>
             <td><input type="text" name="image_intro"/></td>
+        </tr>
+        <tr>
+            <td>Publish</td>
+            <td>
+                <select name="publish">
+                    <option value="1">On</option>
+                    <option value="0">Off</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>Category</td>
+            <td>
+                <select name="category_id">
+                    @foreach($category as $cate)
+                        <option value="{{$cate['id']}}">{{$cate['name']}}</option>
+                    @endforeach
+                </select>
+            </td>
         </tr>
         <tr>
             <td colspan="2">

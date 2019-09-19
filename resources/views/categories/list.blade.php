@@ -4,7 +4,7 @@
         <th colspan="6">List categories</th>
     </tr>
     <tr>
-        <th>Title</th>
+        <th>Name</th>
         <th>Image intro</th>
         <th>Description</th>
         <th>Publish</th>
@@ -13,10 +13,10 @@
     </tr>
     @foreach($categories as $category)
         <tr>
-            <td>{{$category['title']}}</td>
+            <td>{{$category['name']}}</td>
             <td>{{$category['image_intro']}}</td>
             <td>{{$category['description']}}</td>
-            <td>{{$category['publish']}}</td>
+            <td><?php echo $category['publish']==1?"On":"Off" ?></td>
             <td>{{$category['ordering']}}</td>
             <td>
                 <button><a href="/category/{{$category['id']}}">Edit</a></button>

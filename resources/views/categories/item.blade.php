@@ -14,8 +14,8 @@
                 <th colspan="2">Add new category</th>
             </tr>
             <tr>
-                <td>Title: </td>
-                <td><input type="text" name="title" /></td>
+                <td>Name: </td>
+                <td><input type="text" name="name" /></td>
             </tr>
             <tr>
                 <td>Image intro: </td>
@@ -36,7 +36,7 @@
             </tr>
             <tr>
                 <td>Ordering: </td>
-                <td><input type="text" name="ordering" /></td>
+                <td><input type="number" name="ordering" /></td>
             </tr>
             <tr>
                 <td colspan="2">
