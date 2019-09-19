@@ -33,6 +33,7 @@
             <td>
                 <button><a href="/product/{{$product->id}}">Edit</a></button>
                 <button><a href="/product/delete/{{$product->id}}">Delete</a></button>
+                <button>Add to card</button>
             </td>
         </tr>
     @endforeach

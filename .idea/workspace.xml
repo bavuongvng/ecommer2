@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4abfeaa6-7aea-4a8f-9c94-347b05ae6bfc" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/products/productsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/products/productsController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/products/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/products/edit.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/products/item.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/products/item.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2019_09_09_124844_products-table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_09_09_124844_products-table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2019_09_09_140151_category.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_09_09_140151_category.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/products/list.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/products/list.blade.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -34,25 +33,31 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="productsController.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/products/productsController.php">
+      <file leaf-file-name="2019_09_19_132646_card.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/database/migrations/2019_09_19_132646_card.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
-              <caret line="25" selection-start-line="25" selection-end-line="25" />
-              <folding>
-                <element signature="e#49#66#0#PHP" expanded="true" />
-              </folding>
+            <state relative-caret-position="285">
+              <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="list.blade.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/products/list.blade.php">
+      <file leaf-file-name="2019_09_09_140151_category.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/database/migrations/2019_09_09_140151_category.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="24" column="33" selection-start-line="24" selection-start-column="33" selection-end-line="24" selection-end-column="33" />
+            <state relative-caret-position="234">
+              <caret line="19" column="40" lean-forward="true" selection-start-line="19" selection-start-column="40" selection-end-line="19" selection-end-column="40" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="2019_09_09_124844_products-table.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/database/migrations/2019_09_09_124844_products-table.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="307">
+              <caret line="26" column="11" lean-forward="true" selection-start-line="26" selection-start-column="11" selection-end-line="26" selection-end-column="11" />
               <folding>
-                <element signature="e#6#29#0#PHP" expanded="true" />
+                <element signature="e#7#45#0#PHP" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -73,9 +78,7 @@
       <list>
         <option value="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" />
         <option value="$PROJECT_DIR$/.env" />
-        <option value="$PROJECT_DIR$/database/migrations/2019_09_09_140151_category.php" />
         <option value="$PROJECT_DIR$/resources/views/products/add.blade.php" />
-        <option value="$PROJECT_DIR$/database/migrations/2019_09_09_124844_products-table.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/admin/productsController.php" />
         <option value="$PROJECT_DIR$/resources/views/admin/categories/item.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/admin/login.blade.php" />
@@ -91,8 +94,11 @@
         <option value="$PROJECT_DIR$/resources/views/categories/edit.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/products/item.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/products/edit.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/products/list.blade.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/products/productsController.php" />
+        <option value="$PROJECT_DIR$/resources/views/products/list.blade.php" />
+        <option value="$PROJECT_DIR$/database/migrations/2019_09_09_140151_category.php" />
+        <option value="$PROJECT_DIR$/database/migrations/2019_09_09_124844_products-table.php" />
+        <option value="$PROJECT_DIR$/database/migrations/2019_09_19_132646_card.php" />
       </list>
     </option>
   </component>
@@ -223,31 +229,13 @@
             <path>
               <item name="ecommer2" type="b2602c69:ProjectViewProjectNode" />
               <item name="ecommer2" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="Http" type="462c0819:PsiDirectoryNode" />
+              <item name="database" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ecommer2" type="b2602c69:ProjectViewProjectNode" />
               <item name="ecommer2" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="Http" type="462c0819:PsiDirectoryNode" />
-              <item name="Controllers" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ecommer2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ecommer2" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="Http" type="462c0819:PsiDirectoryNode" />
-              <item name="Controllers" type="462c0819:PsiDirectoryNode" />
-              <item name="categories" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ecommer2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ecommer2" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="Http" type="462c0819:PsiDirectoryNode" />
-              <item name="Controllers" type="462c0819:PsiDirectoryNode" />
-              <item name="products" type="462c0819:PsiDirectoryNode" />
+              <item name="database" type="462c0819:PsiDirectoryNode" />
+              <item name="migrations" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ecommer2" type="b2602c69:ProjectViewProjectNode" />
@@ -325,12 +313,12 @@
       <workItem from="1568033178785" duration="3446000" />
       <workItem from="1568036713165" duration="2485000" />
       <workItem from="1568633688460" duration="10373000" />
-      <workItem from="1568892408891" duration="6625000" />
+      <workItem from="1568892408891" duration="7396000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="22929000" />
+    <option name="totallyTimeSpent" value="23700000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="34" y="-11" width="1333" height="780" extended-state="6" />
@@ -342,8 +330,8 @@
       <window_info anchor="bottom" id="Version Control" order="10" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info id="npm" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.4996109" weight="0.82371294" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.13696498" />
+      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.4996109" visible="true" weight="0.19656786" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2614786" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" weight="0.3299611" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -408,6 +396,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
           <caret line="19" column="40" selection-start-line="19" selection-start-column="40" selection-end-line="19" selection-end-column="40" />
+          <folding>
+            <element signature="e#7#45#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -443,6 +434,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
           <caret line="19" column="25" lean-forward="true" selection-start-line="19" selection-start-column="25" selection-end-line="19" selection-end-column="25" />
+          <folding>
+            <element signature="e#7#45#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -481,20 +475,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/products/add.blade.php" />
-    <entry file="file://$PROJECT_DIR$/database/migrations/2019_09_09_124844_products-table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="99">
-          <caret line="19" column="40" selection-start-line="19" selection-start-column="40" selection-end-line="19" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2019_09_09_140151_category.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="249">
-          <caret line="26" column="4" selection-start-line="26" selection-start-column="4" selection-end-line="26" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/admin/products.php" />
     <entry file="file://$PROJECT_DIR$/resources/views/admin/products/item.blade.php">
       <provider selected="true" editor-type-id="text-editor">
@@ -652,8 +632,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/products/list.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="24" column="33" selection-start-line="24" selection-start-column="33" selection-end-line="24" selection-end-column="33" />
+        <state relative-caret-position="373">
+          <caret line="40" lean-forward="true" selection-start-line="40" selection-end-line="40" />
           <folding>
             <element signature="e#6#29#0#PHP" expanded="true" />
           </folding>
@@ -662,11 +642,35 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/products/productsController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="25" selection-start-line="25" selection-end-line="25" />
+        <state relative-caret-position="255">
+          <caret line="17" column="56" selection-start-line="17" selection-start-column="56" selection-end-line="17" selection-end-column="66" />
           <folding>
             <element signature="e#49#66#0#PHP" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2019_09_09_124844_products-table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="307">
+          <caret line="26" column="11" lean-forward="true" selection-start-line="26" selection-start-column="11" selection-end-line="26" selection-end-column="11" />
+          <folding>
+            <element signature="e#7#45#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2019_09_09_140151_category.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="19" column="40" lean-forward="true" selection-start-line="19" selection-start-column="40" selection-end-line="19" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2019_09_19_132646_card.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
         </state>
       </provider>
     </entry>

@@ -13,8 +13,8 @@ class Category extends Migration
      */
     public function up()
     {
-        Schema::create('categoriesController', function (Blueprint $table) {
-            $table->bigIncrements('category_id');
+        Schema::create('categories', function (Blueprint $table) {
+            $table->bigIncrements('id');
             $table->string("title")->unique();
             $table->string("image_intro");
             $table->text("description");
