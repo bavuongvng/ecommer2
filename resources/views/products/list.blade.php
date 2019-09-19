@@ -24,8 +24,8 @@
             <td>{{$product['ordering']}}</td>
             <td>{{$product['image_intro']}}</td>
             <td>
-                <button>Edit</button>
-                <button>Delete</button>
+                <button><a href="/product/{{$product['id']}}">Edit</a></button>
+                <button><a href="/product/delete/{{$product['id']}}">Delete</a></button>
             </td>
         </tr>
     @endforeach

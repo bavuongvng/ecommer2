@@ -18,9 +18,15 @@ Route::get('/', function () {
 Route::get('/products', ['as'=>'list-products', 'uses'=>'products\productsController@getList']);
 Route::get('/product', 'products\productsController@addItem');
 Route::post('/product', 'products\productsController@store');
+Route::get('/product/delete/{id}', 'products\productsController@delete');
+Route::get('/product/{id}', 'products\productsController@edit');
+Route::post('/product/{id}', 'products\productsController@update');
+
 Route::get('/categories', ['as'=>'list-category', 'uses'=>'categories\categoriesController@getList']);
 Route::get('/category', 'categories\categoriesController@getItem');
-Route::get('/category', 'categories\categoriesController@editItem/{$id}');
+Route::get('/category/{id}', 'categories\categoriesController@editItem');
+Route::post('/category/{id}', 'categories\categoriesController@update');
+Route::get('/category/delete/{id}', 'categories\categoriesController@delete');
 Route::post('/category', 'categories\categoriesController@store');
 
 Route::get('/login', ['as'=>'login', 'uses'=>'user\userController@login']);

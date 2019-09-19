@@ -19,8 +19,8 @@
             <td>{{$category['publish']}}</td>
             <td>{{$category['ordering']}}</td>
             <td>
-                <input type="button" value="Edit" name="edit" />
-                <input type="button" value="Delete" name="delete" />
+                <button><a href="/category/{{$category['id']}}">Edit</a></button>
+                <button><a href="/category/delete/{{$category['id']}}">Delete</a></button>
             </td>
         </tr>
     @endforeach
