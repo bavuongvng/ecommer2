@@ -32,15 +32,26 @@
         </tr>
         <tr>
             <td>Publish</td>
-            <td><input type="number" name="publish"/></td>
+            <td>
+                <select name="publish">
+                    <option value="1">Hien</option>
+                    <option value="0">An</option>
+                </select>
+            </td>
         </tr>
         <tr>
             <td>Hot product</td>
             <td><input type="number" name="hot_product"/></td>
         </tr>
         <tr>
-            <td>Category id</td>
-            <td><input type="number" name="category_id"/></td>
+            <td>Category</td>
+            <td>
+                <select name="category_id">
+                    @foreach($category as $cate)
+                        <option value="{{$cate['id']}}">{{$cate['title']}}</option>
+                    @endforeach
+                </select>
+            </td>
         </tr>
         <tr>
             <td>Ordering</td>

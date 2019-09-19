@@ -1,3 +1,10 @@
+<?php
+//        echo "<pre>";
+//        echo $products;
+//        echo "</pre>";
+//        die();
+?>
+
 <table border="1" style="margin: 20px auto">
     <tr>
         <th colspan="9">List products</th>
@@ -15,17 +22,17 @@
     </tr>
     @foreach($products as $product)
         <tr>
-            <td>{{$product['title']}}</td>
-            <td>{{$product['short_description']}}</td>
-            <td>{{$product['description']}}</td>
-            <td>{{$product['publish']}}</td>
-            <td>{{$product['hot_product']}}</td>
-            <td>{{$product['category_id']}}</td>
-            <td>{{$product['ordering']}}</td>
-            <td>{{$product['image_intro']}}</td>
+            <td>{{$product->title}}</td>
+            <td>{{$product->short_description}}</td>
+            <td>{{$product->description}}</td>
+            <td><?php echo $product->publish==1?"Hien":"An"?></td>
+            <td>{{$product->hot_product}}</td>
+            <td>{{$product->title_cate}}</td>
+            <td>{{$product->ordering}}</td>
+            <td>{{$product->image_intro}}</td>
             <td>
-                <button><a href="/product/{{$product['id']}}">Edit</a></button>
-                <button><a href="/product/delete/{{$product['id']}}">Delete</a></button>
+                <button><a href="/product/{{$product->id}}">Edit</a></button>
+                <button><a href="/product/delete/{{$product->id}}">Delete</a></button>
             </td>
         </tr>
     @endforeach

@@ -32,7 +32,12 @@
         </tr>
         <tr>
             <td>Publish</td>
-            <td><input type="number" name="publish" value="{{$product['publish']}}"/></td>
+            <td>
+                <select name="publish">
+                    <option value="1" <?php echo $product['publish']==1?"selected":"" ?> >Hien</option>
+                    <option value="0" <?php echo $product['publish']==0?"selected":"" ?> >An</option>
+                </select>
+            </td>
         </tr>
         <tr>
             <td>Hot product</td>
@@ -40,7 +45,13 @@
         </tr>
         <tr>
             <td>Category id</td>
-            <td><input type="number" name="category_id" value="{{$product['category_id']}}"/></td>
+            <td>
+                <select name="category_id">
+                    @foreach($category as $cate)
+                        <option value="{{$cate['id']}}" <?php echo $cate['id']==$product['category_id'] ? "selected":""?> >{{$cate['title']}}</option>
+                    @endforeach
+                </select>
+            </td>
         </tr>
         <tr>
             <td>Ordering</td>
