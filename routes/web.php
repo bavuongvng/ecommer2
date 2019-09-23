@@ -31,6 +31,7 @@ Route::post('/category', 'categories\categoriesController@store');
 
 Route::get('/product/add-cart/{product_id}', 'cart\cartController@addProduct');
 Route::get('/cart', 'cart\cartController@getList');
+Route::get('/cart/delete/{id}', 'cart\cartController@delete');
 
 Route::get('/login', ['as'=>'login', 'uses'=>'user\userController@login']);
 

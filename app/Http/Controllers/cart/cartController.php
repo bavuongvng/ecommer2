@@ -55,4 +55,14 @@ class cartController extends Controller
     function getList() {
         return view("cart.list");
     }
+
+    function delete($id){
+        $cart = session('cart');
+        if (isset($cart[$id])){
+            unset($cart[$id]);
+            session()->put('cart', $cart);
+        }
+        session()->flash('Success', 'Product removed success');
+        return view('cart.list');
+    }
 }

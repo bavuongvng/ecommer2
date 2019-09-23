@@ -47,8 +47,8 @@
                 <td class="actions" data-th="">
                     <button class="btn btn-info btn-sm update-cart" data-id="{{ $id }}"><i class="fa fa-refresh"></i>
                     </button>
-                    <button class="btn btn-danger btn-sm remove-from-cart" data-id="{{ $id }}"><i
-                                class="fa fa-trash-o"></i></button>
+                    <a href="/cart/delete/{{$id}}"><button class="btn btn-danger btn-sm remove-from-cart" data-id="{{ $id }}"><i
+                                class="fa fa-trash-o"></i></button></a>
                 </td>
             </tr>
         @endforeach
