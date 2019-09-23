@@ -29,6 +29,9 @@ Route::post('/category/{id}', 'categories\categoriesController@update');
 Route::get('/category/delete/{id}', 'categories\categoriesController@delete');
 Route::post('/category', 'categories\categoriesController@store');
 
+Route::get('/product/add-cart/{product_id}', 'cart\cartController@addProduct');
+Route::get('/cart', 'cart\cartController@getList');
+
 Route::get('/login', ['as'=>'login', 'uses'=>'user\userController@login']);
 
 Route::group(['prefix'=>'admin', 'namespace'=>'admin', 'middleware'=>'auth'], function (){

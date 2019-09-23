@@ -74,7 +74,7 @@
         <tr>
             <td colspan="2">
                 <input type="submit" value="Update"/>
-                <button><a href="/products">Cancel</a></button>
+                <a href="/products"><button>Cancel</button></a>
             </td>
         </tr>
         </tbody>

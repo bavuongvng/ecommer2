@@ -20,36 +20,36 @@
         <tbody>
         <tr>
             <td>Name</td>
-            <td><input autofocus type="text" name="name"/></td>
+            <td><input autofocus type="text" name="name" value="Product 1"/></td>
         </tr>
         <tr>
             <td>Short description</td>
-            <td><input type="text" name="short_description"/></td>
+            <td><input type="text" name="short_description" value="Short 1"/></td>
         </tr>
         <tr>
             <td>Description</td>
-            <td><input type="text" name="description"/></td>
+            <td><input type="text" name="description" value="Description 1"/></td>
         </tr>
 
         <tr>
             <td>Hot product</td>
-            <td><input type="number" name="hot_product"/></td>
+            <td><input type="number" name="hot_product" value="1"/></td>
         </tr>
         <tr>
             <td>Price</td>
-            <td><input type="number" name="price"/></td>
+            <td><input type="number" name="price" value="1"/></td>
         </tr>
         <tr>
             <td>Amount</td>
-            <td><input type="number" name="amount"/></td>
+            <td><input type="number" name="amount" value="1"/></td>
         </tr>
         <tr>
             <td>Ordering</td>
-            <td><input type="number" name="ordering"/></td>
+            <td><input type="number" name="ordering" value="1"/></td>
         </tr>
         <tr>
             <td>Image intro</td>
-            <td><input type="text" name="image_intro"/></td>
+            <td><input type="text" name="image_intro" value="Img 1"/></td>
         </tr>
         <tr>
             <td>Publish</td>
