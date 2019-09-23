@@ -15,15 +15,15 @@
             </tr>
             <tr>
                 <td>Name: </td>
-                <td><input type="text" name="name" /></td>
+                <td><input type="text" name="name" value="Cate " /></td>
             </tr>
             <tr>
                 <td>Image intro: </td>
-                <td><input type="text" name="image_intro" /></td>
+                <td><input type="text" name="image_intro" value="Img " /></td>
             </tr>
             <tr>
                 <td>Description: </td>
-                <td><input type="text" name="description" /></td>
+                <td><input type="text" name="description" value="Description" /></td>
             </tr>
             <tr>
                 <td>Publish </td>
@@ -36,7 +36,7 @@
             </tr>
             <tr>
                 <td>Ordering: </td>
-                <td><input type="number" name="ordering" /></td>
+                <td><input type="number" name="ordering" value="1" /></td>
             </tr>
             <tr>
                 <td colspan="2">

@@ -20,15 +20,15 @@
         <tbody>
         <tr>
             <td>Name</td>
-            <td><input autofocus type="text" name="name" value="Product 1"/></td>
+            <td><input autofocus type="text" name="name" value="Product "/></td>
         </tr>
         <tr>
             <td>Short description</td>
-            <td><input type="text" name="short_description" value="Short 1"/></td>
+            <td><input type="text" name="short_description" value="Short "/></td>
         </tr>
         <tr>
             <td>Description</td>
-            <td><input type="text" name="description" value="Description 1"/></td>
+            <td><input type="text" name="description" value="Description "/></td>
         </tr>
 
         <tr>
@@ -49,7 +49,7 @@
         </tr>
         <tr>
             <td>Image intro</td>
-            <td><input type="text" name="image_intro" value="Img 1"/></td>
+            <td><input type="text" name="image_intro" value="Img "/></td>
         </tr>
         <tr>
             <td>Publish</td>

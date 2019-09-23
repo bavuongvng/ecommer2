@@ -1,7 +1,6 @@
-<h1>List categories</h1>
 <table border="1" style="margin: 20px auto;">
     <tr>
-        <th colspan="6">List categories</th>
+        <th colspan="6" class="text-center">List categories</th>
     </tr>
     <tr>
         <th>Name</th>
@@ -9,7 +8,7 @@
         <th>Description</th>
         <th>Publish</th>
         <th>Ordering</th>
-        <th><button><a href="/category">Add</a></button></th>
+        <th><a href="/category"><button class="container-fluid">Add</button></a></th>
     </tr>
     @foreach($categories as $category)
         <tr>
