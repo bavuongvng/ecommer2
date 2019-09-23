@@ -45,7 +45,7 @@
             <td>{{$product->amount}}</td>
             <td>{{$product->name_cate}}</td>
             <td>{{$product->ordering}}</td>
-            <td>{{$product->image_intro}}</td>
+            <td><img  width="100" height="100" src="{{$product->image_intro}}" /></td>
             <td><?php echo $product->publish == 1 ? "On" : "Off"?></td>
             <td>
                 <a href="/product/{{$product->id}}"><button>Edit</button></a>

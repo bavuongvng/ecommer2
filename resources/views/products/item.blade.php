@@ -49,7 +49,7 @@
         </tr>
         <tr>
             <td>Image intro</td>
-            <td><input type="text" name="image_intro" value="Img "/></td>
+            <td><input type="text" name="image_intro" value="https://nuochoangoisao.com/wp-content/uploads/2019/02/nuoc-hoa-lancome-tresor-midnight-rose-eau-de-parfum-50ml-600x600.png"/></td>
         </tr>
         <tr>
             <td>Publish</td>
