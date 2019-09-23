@@ -33,6 +33,9 @@ Route::get('/product/add-cart/{product_id}', 'cart\cartController@addProduct');
 Route::get('/cart', 'cart\cartController@getList');
 Route::get('/cart/delete/{id}', 'cart\cartController@delete');
 
+Route::get('/user/info', 'user\userController@formInfo');
+Route::post('/user/info', 'user\userController@getInfo');
+
 Route::get('/login', ['as'=>'login', 'uses'=>'user\userController@login']);
 
 Route::group(['prefix'=>'admin', 'namespace'=>'admin', 'middleware'=>'auth'], function (){

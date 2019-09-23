@@ -28,7 +28,6 @@
         @foreach(session('cart') as $id => $details)
 
             <?php $total += $details['price'] * $details['quantity'] ?>
-
             <tr>
                 <td data-th="Product">
                     <div class="row">
@@ -63,7 +62,7 @@
         <td><a href="{{ url('/products') }}" class="btn btn-warning"><i class="fa fa-angle-left"></i> Continue Shopping</a></td>
         <td colspan="2" class="hidden-xs"></td>
         <td class="hidden-xs text-center"><strong>Total ${{ $total }}</strong></td>
-        <td><a href="{{ url('/products') }}" class="btn btn-warning">Checkout <i class="fa fa-angle-right"></i></a></td>
+        <td><a href="{{ url('/user/info') }}" class="btn btn-warning">Checkout <i class="fa fa-angle-right"></i></a></td>
     </tr>
     </tfoot>
 </table>
